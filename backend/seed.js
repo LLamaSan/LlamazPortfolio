@@ -1,4 +1,5 @@
 // backend/seed.js
+require('dotenv').config(); // This loads the .env file
 const mongoose = require('mongoose');
 
 // --- Replace with your MongoDB URI ---
