@@ -87,7 +87,7 @@ http://localhost:3000/api/projects/68d55697787af9761ebda4bf
 
 curl -X PUT -H "Content-Type: application/json" \
 -d '{
-    "imageUrl": "http://localhost:3000/images/Tuckshop.png"
+    "imageUrl": "https://llamazportfoliobackend.onrender.com/images/Tuckshop.png"
 }' \
 http://localhost:3000/api/projects/68d55697787af9761ebda4bf
 
@@ -102,3 +102,13 @@ curl -X PUT -H "Content-Type: application/json" \
     ]
 }' \
 http://localhost:3000/api/about/68f0840cd9359f33757792bc
+
+
+
+
+
+curl -X PUT -H "Content-Type: application/json" \
+-d '{
+    "profilePicUrl": "https://llamazportfoliobackend.onrender.com/images/CatPfpSauce.jpeg"
+}' \
+https://llamazportfoliobackend.onrender.com/api/about/68f0840cd9359f33757792bc
