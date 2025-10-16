@@ -4,9 +4,6 @@ require('dotenv').config(); // This must be at the top
 
 const express = require('express');
 const mongoose = require('mongoose');
-// ... rest of your imports
-const express = require('express');
-const mongoose = require('mongoose');
 const cors = require('cors');
 
 const app = express();
