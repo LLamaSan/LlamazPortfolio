@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const aboutSection = document.getElementById('about-section');
     const projectsGrid = document.getElementById('projects-grid');
     
-    const API_BASE_URL = 'https://llamazportfoliobackend.onrender.com';
+    const API_BASE_URL = 'https://llamazportfoliobackend.onrender.com/api';
 
     // --- Fetch and Display About Information (Reverted to Grid Layout) ---
     const fetchAboutInfo = async () => {
