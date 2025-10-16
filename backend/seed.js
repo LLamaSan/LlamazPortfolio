@@ -2,7 +2,7 @@
 const mongoose = require('mongoose');
 
 // --- Replace with your MongoDB URI ---
-const mongoURI = 'mongodb+srv://AdminPortfolioDB:Z8KaqZIlrW4WO9Nu@portfoliocluster.6p7ne2m.mongodb.net/?retryWrites=true&w=majority&appName=PortfolioCluster';
+ const mongoURI = process.env.MONGO_URI;;
 // --- Define Schemas and Models (must match server.js) ---
 const aboutSchema = new mongoose.Schema({
     name: String,
