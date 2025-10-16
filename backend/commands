@@ -5,7 +5,7 @@ curl -X PUT -H "Content-Type: application/json" \
                   "College NIT SXR",
                   "Domain of expertise: Web Development.."
                 ],
-    "profilePicUrl": "http://localhost:3000/images/CatPfpSauce.jpeg",
+    "profilePicUrl": "http://llamazportfoliobackend.onrender.com/images/CatPfpSauce.jpeg",
     "skills": [
         { "name": "HTML5", "iconClass": "fab fa-html5" },
         { "name": "CSS3", "iconClass": "fab fa-css3-alt" },
@@ -18,15 +18,15 @@ curl -X PUT -H "Content-Type: application/json" \
 
     ]
 }' \
-http://localhost:3000/api/about/68f0840cd9359f33757792bc
+http://llamazportfoliobackend.onrender.com/api/about/68f0840cd9359f33757792bc
 
 about : 68f0840cd9359f33757792bc
 
-curl -X DELETE http://localhost:3000/api/projects/YOUR_PROJECT_ID
+curl -X DELETE http://llamazportfoliobackend.onrender.com/api/projects/YOUR_PROJECT_ID
 
-curl -X DELETE http://localhost:3000/api/about/68f0840cd9359f33757792bc
+curl -X DELETE http://llamazportfoliobackend.onrender.com/api/about/68f0840cd9359f33757792bc
 
-curl -X GET http://localhost:3000/api/about
+curl -X GET http://llamazportfoliobackend.onrender.com/api/about
 
 
 
@@ -34,7 +34,7 @@ curl -X POST -H "Content-Type: application-json" \
 -d '{
     "name": "NoDramaLLama",
     "education": "B.Sc. in Computer Science and Technology",
-    "profilePicUrl": "http://localhost:3000/images/CatPfpSauce.jpeg",
+    "profilePicUrl": "http://llamazportfoliobackend.onrender.com/images/CatPfpSauce.jpeg",
     "skills": [
         { "name": "HTML5", "iconClass": "fab fa-html5" },
         { "name": "CSS3", "iconClass": "fab fa-css3-alt" },
@@ -46,7 +46,7 @@ curl -X POST -H "Content-Type: application-json" \
         { "Name":"Postman", "iconClass": "devicon-postman-plain"}
     ]
 }' \
-http://localhost:3000/api/about
+http://llamazportfoliobackend.onrender.com/api/about
 
 
 curl -X POST -H "Content-Type: application-json" \
@@ -54,7 +54,7 @@ curl -X POST -H "Content-Type: application-json" \
 
 
 }' \
-http://localhost:3000/api/projects
+http://llamazportfoliobackend.onrender.com/api/projects
 
 p1: 68d55697787af9761ebda4bf
 p2: 68d55697787af9761ebda4c0
@@ -65,13 +65,13 @@ p3: 68d56a7e7869cea0c2ead9d1
 curl -X PUT -H "Content-Type: application/json" \
 -d '{
     [
-    "imageUrl":"http://localhost:3000/images/Tuckshop.png",
+    "imageUrl":"http://llamazportfoliobackend.onrender.com/images/Tuckshop.png",
     "title": "Campus Tuckshop",
     "description": "A Small Scale E Commerce website with Sign Up/Sign In Modals and integration of Brevo's API to automate emailing confirmations of orders. .",
     "deployedLink": "https://new-deployed-link.com"
     ]
 }' \
-http://localhost:3000/api/projects/68d55697787af9761ebda4bf
+http://llamazportfoliobackend.onrender.com/api/projects/68d55697787af9761ebda4bf
 
 Campus Tuckshop
 A Small Scale E Commerce website with Sign Up/Sign In Modals and integration of Brevo's API to automate emailing confirmations of orders.
@@ -82,14 +82,14 @@ curl -X PUT -H "Content-Type: application/json" \
     \"description\": \"A Small Scale E Commerce website with Sign Up/Sign In Modals and integration of Brevo's API to automate emailing confirmations of orders.\",
     \"githubLink\": \"https://github.com/your-repo/updated\"
 }" \
-http://localhost:3000/api/projects/68d55697787af9761ebda4bf
+http://llamazportfoliobackend.onrender.com/api/projects/68d55697787af9761ebda4bf
 
 
 curl -X PUT -H "Content-Type: application/json" \
 -d '{
     "imageUrl": "https://llamazportfoliobackend.onrender.com/images/Tuckshop.png"
 }' \
-http://localhost:3000/api/projects/68d55697787af9761ebda4bf
+http://llamazportfoliobackend.onrender.com/api/projects/68d55697787af9761ebda4bf
 
 
 
@@ -101,7 +101,7 @@ curl -X PUT -H "Content-Type: application/json" \
         "Domain of expertise: Web Development..",
     ]
 }' \
-http://localhost:3000/api/about/68f0840cd9359f33757792bc
+http://llamazportfoliobackend.onrender.com/api/about/68f0840cd9359f33757792bc
 
 
 
