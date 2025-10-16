@@ -10,9 +10,6 @@ const app = express();
 app.use('/images', express.static('images')); 
 const port = process.env.PORT || 3000;
 
-app.listen(port, '0.0.0.0', () => { // Listen on 0.0.0.0
-    console.log(`Server is running on port: ${port}`);
-});
 
 // Middleware
 app.use(cors());
@@ -185,7 +182,6 @@ app.delete('/api/about/:id', async (req, res) => {
     }
 });
 
-// --- Start the server ---
-app.listen(port, () => {
+app.listen(port, '0.0.0.0', () => { // Listen on 0.0.0.0
     console.log(`Server is running on port: ${port}`);
 });

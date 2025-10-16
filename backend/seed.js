@@ -57,7 +57,7 @@ const projectsData = [
 // --- Seeding Function ---
 const seedDatabase = async () => {
     try {
-        await mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true });
+        await mongoose.connect(mongoURI);
         console.log('MongoDB connected for seeding...');
 
         // Clear existing data
