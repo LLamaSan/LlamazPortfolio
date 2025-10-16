@@ -22,7 +22,7 @@ app.use(express.json());
 // IMPORTANT: Replace <YOUR_MONGODB_URI> with your actual MongoDB connection string.
 // You can get a free one from MongoDB Atlas.
 const mongoURI = process.env.MONGO_URI;
-mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(mongoURI)
     .then(() => console.log('MongoDB connected successfully.'))
     .catch(err => console.error('MongoDB connection error:', err));
 
