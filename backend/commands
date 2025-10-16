@@ -1,0 +1,104 @@
+curl -X PUT -H "Content-Type: application/json" \
+-d '{
+    "name": "NoDramaLLama",
+    "education":[ "B.Tech in Computer Science and Engineering",
+                  "College NIT SXR",
+                  "Domain of expertise: Web Development.."
+                ],
+    "profilePicUrl": "http://localhost:3000/images/CatPfpSauce.jpeg",
+    "skills": [
+        { "name": "HTML5", "iconClass": "fab fa-html5" },
+        { "name": "CSS3", "iconClass": "fab fa-css3-alt" },
+        { "name": "JavaScript", "iconClass": "fab fa-js-square" },
+        { "name": "React", "iconClass": "fab fa-react" },
+        { "name": "Node.js", "iconClass": "fab fa-node-js" },
+        { "name": "C++", "iconClass": "devicon-cplusplus-plain" },
+        { "name": "Python", "iconClass": "devicon-python-plain" },
+        { "Name":"Postman", "iconClass": "devicon-postman-plain"}
+
+    ]
+}' \
+http://localhost:3000/api/about/68f0840cd9359f33757792bc
+
+about : 68f0840cd9359f33757792bc
+
+curl -X DELETE http://localhost:3000/api/projects/YOUR_PROJECT_ID
+
+curl -X DELETE http://localhost:3000/api/about/68f0840cd9359f33757792bc
+
+curl -X GET http://localhost:3000/api/about
+
+
+
+curl -X POST -H "Content-Type: application-json" \
+-d '{
+    "name": "NoDramaLLama",
+    "education": "B.Sc. in Computer Science and Technology",
+    "profilePicUrl": "http://localhost:3000/images/CatPfpSauce.jpeg",
+    "skills": [
+        { "name": "HTML5", "iconClass": "fab fa-html5" },
+        { "name": "CSS3", "iconClass": "fab fa-css3-alt" },
+        { "name": "JavaScript", "iconClass": "fab fa-js-square" },
+        { "name": "React", "iconClass": "fab fa-react" },
+        { "name": "Node.js", "iconClass": "fab fa-node-js" },
+        { "name": "C++", "iconClass": "devicon-cplusplus-plain" },
+        { "name": "Python", "iconClass": "devicon-python-plain" },
+        { "Name":"Postman", "iconClass": "devicon-postman-plain"}
+    ]
+}' \
+http://localhost:3000/api/about
+
+
+curl -X POST -H "Content-Type: application-json" \
+-d '{
+
+
+}' \
+http://localhost:3000/api/projects
+
+p1: 68d55697787af9761ebda4bf
+p2: 68d55697787af9761ebda4c0
+p3: 68d56a7e7869cea0c2ead9d1
+
+
+
+curl -X PUT -H "Content-Type: application/json" \
+-d '{
+    [
+    "imageUrl":"http://localhost:3000/images/Tuckshop.png",
+    "title": "Campus Tuckshop",
+    "description": "A Small Scale E Commerce website with Sign Up/Sign In Modals and integration of Brevo's API to automate emailing confirmations of orders. .",
+    "deployedLink": "https://new-deployed-link.com"
+    ]
+}' \
+http://localhost:3000/api/projects/68d55697787af9761ebda4bf
+
+Campus Tuckshop
+A Small Scale E Commerce website with Sign Up/Sign In Modals and integration of Brevo's API to automate emailing confirmations of orders.
+
+curl -X PUT -H "Content-Type: application/json" \
+-d "{
+    \"title\": \"Campus Tuckshop\",
+    \"description\": \"A Small Scale E Commerce website with Sign Up/Sign In Modals and integration of Brevo's API to automate emailing confirmations of orders.\",
+    \"githubLink\": \"https://github.com/your-repo/updated\"
+}" \
+http://localhost:3000/api/projects/68d55697787af9761ebda4bf
+
+
+curl -X PUT -H "Content-Type: application/json" \
+-d '{
+    "imageUrl": "http://localhost:3000/images/Tuckshop.png"
+}' \
+http://localhost:3000/api/projects/68d55697787af9761ebda4bf
+
+
+
+curl -X PUT -H "Content-Type: application/json" \
+-d '{
+    "education": [
+        "B.Tech in Computer Sciences and Engineering",
+        "College NIT SXR",
+        "Domain of expertise: Web Development..",
+    ]
+}' \
+http://localhost:3000/api/about/68f0840cd9359f33757792bc
