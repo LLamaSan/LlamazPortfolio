@@ -84,7 +84,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         <p>${project.description}</p>
                         <div class="project-links">
                             ${project.githubLink ? `<a href="${project.githubLink}" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>` : ''}
-                            ${project.deployedLink ? `<a href="${project.deployedLink}" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>` : ''}
+                            ${project.deployedLink ? `<a href="${project.deployedLink.startsWith('http') ? project.deployedLink : 'https://' + project.deployedLink}" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> </a>`: ''}
+
                         </div>
                     </div>
                 `;

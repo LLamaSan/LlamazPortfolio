@@ -112,3 +112,20 @@ curl -X PUT -H "Content-Type: application/json" \
     "profilePicUrl": "https://llamazportfoliobackend.onrender.com/images/CatPfpSauce.jpeg"
 }' \
 https://llamazportfoliobackend.onrender.com/api/about/68f0840cd9359f33757792bc
+
+
+
+curl -X PUT -H "Content-Type: application/json" \
+-d '{
+    "imageUrl": "https://llamazportfoliobackend.onrender.com/images/Tuckshop.png"
+}' \
+https://llamazportfoliobackend.onrender.com/api/projects/68d55697787af9761ebda4bf
+
+
+
+curl -X PUT -H "Content-Type: application/json" \
+-d '{
+    "githubLink": "https://github.com/LLamaSan/CampusTuckshop",
+    "deployedLink": "campus-tuckshop.vercel.app"
+}' \
+https://my-portfolio-backend.onrender.com/api/projects/8d55697787af9761ebda4bf
